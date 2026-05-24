@@ -5,16 +5,18 @@ public class Driver {
 	public static void main(String[] args) {
 		
 		Counter counter = new Counter();
+
+		String currentCountText = "Current count:";
 		
-		System.out.println("Current count:" + counter.getCount());
+		System.out.println(currentCountText + counter.getCount());
 		
 		counter.increment();
 		
-		System.out.println("Current count:" + counter.getCount());
+		System.out.println(currentCountText + counter.getCount());
 		
 		counter.decrement();
 		
-		System.out.println("Current count:" + counter.getCount());
+		System.out.println(currentCountText + counter.getCount());
 		
 	}
 
